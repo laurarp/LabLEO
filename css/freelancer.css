@@ -16,12 +16,34 @@ body {
     width: 100%
 }
 
+.descripcion
+{
+  padding: 50px;
+}
+
 p {
+  font-size: 20px;
+}
+
+.lista
+{
   font-size: 20px;
 }
 p.small {
   font-size: 15px;
 }
+
+.center {
+  vertical-align:middle;
+  text-align:center;
+  font-size: 15px;
+}
+
+td[rowspan] {
+  vertical-align: middle;
+  text-align: center;
+}
+
 a,
 a:hover,
 a:focus,
