@@ -124,6 +124,38 @@
                                             </div>
                                             <!-- /.panel -->
                                         </div>
+                                        <br><br>
+                                        <h3 style="text-align: center">Número de tutorías por semestre</h3>
+                                        <br>
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    Tutorias por semestre
+                                                </div>
+                                                <!-- /.panel-heading -->
+                                                <div class="panel-body">
+                                                    <div id="tutoriasSemestre"></div>
+                                                </div>
+                                                <!-- /.panel-body -->
+                                            </div>
+                                            <!-- /.panel -->
+                                        </div>
+                                        <br><br>
+                                        <h3 style="text-align: center">Número de tutorías por tutor</h3>
+                                        <br>
+                                        <div class="col-lg-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    Tutorias por tutor
+                                                </div>
+                                                <!-- /.panel-heading -->
+                                                <div class="panel-body">
+                                                    <div id="tutoriasTutor"></div>
+                                                </div>
+                                                <!-- /.panel-body -->
+                                            </div>
+                                            <!-- /.panel -->
+                                        </div>
     								</div>
     							</div>
     						</section>
@@ -256,7 +288,89 @@
                         labels: ['Numero de tutorías'],
                         hideHover: 'auto',
                         resize: true,
-                        barColors: ['#729F94']
+                        barColors: ['#E57177']
+                    });
+
+                    Morris.Bar({
+                        element: 'tutoriasSemestre',
+                        data: [{
+                            x: 'Semestre 1',
+                            y: 106
+                        }, {
+                            x: 'Semestre 2',
+                            y: 21,
+                        }, {
+                            x: 'Semestre 3',
+                            y: 2
+                        }, {
+                            x: 'Semestre 4',
+                            y: 4
+                        }, {
+                            x: 'Semestre 5',
+                            y: 4
+                        }, {
+                            x: 'Semestre 6',
+                            y: 5
+                        }, {
+                            x: 'Semestre 7',
+                            y: 1
+                        }, {
+                            x: 'Semestre 8',
+                            y: 4
+                        }, {
+                            x: 'Semestre 9',
+                            y: 1
+                        }, {
+                            x: 'Semestre 10',
+                            y: 1
+                        }],
+                        xkey: 'x',
+                        ykeys: ['y'],
+                        labels: ['Numero de tutorías'],
+                        hideHover: 'auto',
+                        resize: true,
+                        barColors: ['#7EBDAB']
+                    });
+
+                    Morris.Bar({
+                        element: 'tutoriasTutor',
+                        data: [{
+                            x: 'Edwin Adrián Bedoya Cardona',
+                            y: 11
+                        }, {
+                            x: 'Abel Enrique Camacho Tejada',
+                            y: 15,
+                        }, {
+                            x: 'Pablo González Peláez',
+                            y: 10
+                        }, {
+                            x: 'María del Mar Arias Gómez',
+                            y: 6
+                        }, {
+                            x: 'Carolina Castaño Uribe',
+                            y: 12
+                        }, {
+                            x: 'Juan Felipe Alarcón Echeverri',
+                            y: 24
+                        }, {
+                            x: 'Viviana Zuluaga Higuita',
+                            y: 13
+                        }, {
+                            x: 'Felipe Hernández Martínez',
+                            y: 16
+                        }, {
+                            x: 'Andrés Rodríguez Hurtado',
+                            y: 22
+                        }, {
+                            x: 'Laura Natalia Gil Velásquez',
+                            y: 20
+                        }],
+                        xkey: 'x',
+                        ykeys: ['y'],
+                        labels: ['Numero de tutorías'],
+                        hideHover: 'auto',
+                        resize: true,
+                        barColors: ['#D2CE70']
                     });
 
                 });
